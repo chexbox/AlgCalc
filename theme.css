@@ -1,0 +1,5 @@
+body { background-color: #555555; }
+.small-key { border: 2px solid #202020; border-radius: 5px; width: 32%; padding: 10px; }
+.row { padding: 2px; max-width: 750px;}
+#in { border: 2px solid #202020; border-radius: 5px; width: 50%; padding: 10px; }
+#calculate { border: 2px solid #202020; border-radius: 5px; width: 25%; padding: 10px; }
