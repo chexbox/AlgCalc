@@ -4,4 +4,9 @@ function append(char) {
   v.value = v.value + char;
 };
 
+function clear() {
+  var v = document.getElementById("in");
+  v.value = "";
+};
+
 document.getElementById("in").value = "";
