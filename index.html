@@ -3,13 +3,14 @@
 
   <head>
     <link rel="stylesheet" type="text/css" href="theme.css" />
+    <title>Algebra Calculator!</title>
   </head>
 
   <body>
 
     <div class="top">
       <!-- Maybe get a different class... -->
-      <input type="text" id="in"> <button class="key">Calculate</button>
+      <input type="text" id="in"> <button class="key">Calculate!</button>
     </div>
 
     <div class="row">
@@ -30,7 +31,9 @@
     <div class="row">
       <button class="key small" id="0-key" onclick="append(0);">0</button> <button class="key small" id="clear-key" onclick="clr();">clear</button> <button class="key small" id="dot-key" onclick="append('.');">.</button> <button class="key small" id="add-key" onclick="append('+');">+</button>
     </div>
-
+    <div class="row" id="gh">
+      <a id="ghlink" href="https://github.com/chexbox/Algebra-Calculator">View on scource GitHub</a>
+    </div>
     <script src="calculate.js"></script>
 
   </body>

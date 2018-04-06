@@ -9,6 +9,7 @@ body {
   padding: 10px;
   /*May change later.*/
   transition: all 0.2s ease;
+  user-select: none;
 }
 .key:hover {
   /*May change later.*/
@@ -37,4 +38,25 @@ body {
 .top {
   padding: 2px;
   max-width: 750px;
+}
+#gh {
+  border: 2px solid #202020;
+  border-radius: 5px;
+  padding: 10px;
+  /*May change later.*/
+  transition: all 0.2s ease;
+  background-color: #e0e0e0;
+  user-select: none;
+}
+#gh:hover {
+  /*May change later.*/
+  filter: brightness(110%);
+}
+#gh:active {
+  /*May change later.*/
+  filter: brightness(110%);
+}
+#ghlink {
+  color: black;
+  text-decoration: none;
 }
