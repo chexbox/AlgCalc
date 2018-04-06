@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="theme.css" />
-</head>
-<body>
 
-<div class="row">
-<input type="text" id="in"> <button id="calculate">Calculate</button>
-</div>
+  <head>
+    <link rel="stylesheet" type="text/css" href="theme.css" />
+  </head>
 
-<div class="row">
-<button class="small-key" id="7-key" onclick="append(7);">7</button> <button class="small-key" id="8-key" onclick="append(8);">8</button> <button class="small-key" id="9-key" onclick="append(9);">9</button> <button class="small-key" id="divide-key" onclick="append('/');">/</button><br>
-</div>
+  <body>
 
-<div class="row">
-<button class="small-key" id="4-key" onclick="append(4);">4</button> <button class="small-key" id="5-key" onclick="append(5);">5</button> <button class="small-key" id="6-key" onclick="append(6);">6</button> <button class="small-key" id="multiply-key" onclick="append('*');">*</button><br>
-</div>
+    <div class="row">
+      <!-- Maybe get a different class... -->
+      <input type="text" id="in" class="key"> <button id="calculate">Calculate</button>
+    </div>
 
-<div class="row">
-<button class="small-key" id="1-key" onclick="append(1);">1</button> <button class="small-key" id="2-key" onclick="append(2);">2</button> <button class="small-key" id="3-key" onclick="append(3);">3</button> <button class="small-key" id="subtract-key" onclick="append('-');">-</button><br>
-</div>
+    <div class="row">
+      <button class="key small" id="7-key" onclick="append(7);">7</button> <button class="key small" id="8-key" onclick="append(8);">8</button> <button class="key small" id="9-key" onclick="append(9);">9</button> <button class="key small" id="divide-key"
+        onclick="append('/');">/</button><br>
+    </div>
 
-<div class="row">
-<button class="small-key" id="0-key" onclick="append(0);">0</button> <button class="empty-key"> </button> <button class="small-key" id="dot-key" onclick="append('.');">.</button> <button class="small-key" id="add-key" onclick="append('+');">+</button>
-</div>
+    <div class="row">
+      <button class="key small" id="4-key" onclick="append(4);">4</button> <button class="key small" id="5-key" onclick="append(5);">5</button> <button class="key small" id="6-key" onclick="append(6);">6</button> <button class="key small" id="multiply-key"
+        onclick="append('*');">*</button><br>
+    </div>
 
-<script src="calculate.js"></script>
+    <div class="row">
+      <button class="key small" id="1-key" onclick="append(1);">1</button> <button class="key small" id="2-key" onclick="append(2);">2</button> <button class="key small" id="3-key" onclick="append(3);">3</button> <button class="key small" id="subtract-key"
+        onclick="append('-');">-</button><br>
+    </div>
 
-</body>
+    <div class="row">
+      <button class="key small" id="0-key" onclick="append(0);">0</button> <button class="empty-key"> </button> <button class="key small" id="dot-key" onclick="append('.');">.</button> <button class="key small" id="add-key" onclick="append('+');">+</button>
+    </div>
+
+    <script src="calculate.js"></script>
+
+  </body>
+
 </html>
