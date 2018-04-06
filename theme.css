@@ -18,8 +18,11 @@ body {
   /*May change later.*/
   filter: brightness(110%);
 }
-.in {
-  width: 50%;
+#in {
+  border: 2px solid #202020;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(100% - (24% + 40px));
 }
 
 .empty {
@@ -31,6 +34,7 @@ body {
   padding: 2px;
   max-width: 750px;
 }
-
-
-
+.top {
+  padding: 2px;
+  max-width: 750px;
+}

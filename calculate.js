@@ -4,7 +4,7 @@ function append(char) {
   v.value = v.value + char;
 };
 
-function clear() {
+function clr() {
   var v = document.getElementById("in");
   v.value = "";
 };

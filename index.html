@@ -7,9 +7,9 @@
 
   <body>
 
-    <div class="row">
+    <div class="top">
       <!-- Maybe get a different class... -->
-      <input type="text" id="in" class="key"> <button id="calculate">Calculate</button>
+      <input type="text" id="in"> <button class="key">Calculate</button>
     </div>
 
     <div class="row">
@@ -28,7 +28,7 @@
     </div>
 
     <div class="row">
-      <button class="key small" id="0-key" onclick="append(0);">0</button> <button class="key small" id="clear-key" onclick="clear();">clear</button> <button class="key small" id="dot-key" onclick="append('.');">.</button> <button class="key small" id="add-key" onclick="append('+');">+</button>
+      <button class="key small" id="0-key" onclick="append(0);">0</button> <button class="key small" id="clear-key" onclick="clr();">clear</button> <button class="key small" id="dot-key" onclick="append('.');">.</button> <button class="key small" id="add-key" onclick="append('+');">+</button>
     </div>
 
     <script src="calculate.js"></script>
