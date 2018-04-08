@@ -34,10 +34,17 @@ body {
 .row {
   padding: 2px;
   max-width: 750px;
+
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .top {
   padding: 2px;
   max-width: 750px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 #gh {
   border: 2px solid #202020;
