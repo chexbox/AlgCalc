@@ -8,7 +8,7 @@ function clr() {
   var v = document.getElementById("in");
   v.value = "";
 };
-
+/* //Calculations
 function calculate(what) {
   var cnst[];
   var oper[];
@@ -29,5 +29,5 @@ function calculate(what) {
     
   };
 };
-
+*/
 document.getElementById("in").value = "";
