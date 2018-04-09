@@ -58,7 +58,7 @@
     border: 2px solid #039be5;
     border-radius: 2.5px;
     width: calc( 25% - 9px);
-    padding: 10px;
+    padding: 1em 0;
     /*May change later.*/
     transition: all 0.1s ease;
     user-select: none;
@@ -79,12 +79,12 @@
     box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
   }
   .key.sm {
-    width: calc( 12.5% - 8px);
+    width: calc( 12.5% - 9px);
   }
   .key.full {
     width: calc(100% - 34px);
     margin: 2.5px;
-    ;
+    
     display: block;
   }
   #in {
