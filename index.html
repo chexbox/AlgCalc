@@ -2,40 +2,48 @@
 <html>
 
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="theme.css" />
     <title>Algebra Calculator!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calculate.js"></script>
   </head>
 
   <body>
+    <div class="bar">
+      <h1>Algebra Calculator!</h1>
+    </div>
+    <div class="card">
+      <div class="top">
+        <!-- Maybe get a different class... -->
+        <input type="text" id="in"> <button class="key sm" id="delete-key" onclick="del();">Delete</button><button class="key sm" id="clear-key" onclick="clr();">clear</button>
+      </div>
 
-    <div class="top">
-      <!-- Maybe get a different class... -->
-      <input type="text" id="in"> <button class="key" onclick="calc()">Calculate!</button>
+      <div class="row">
+        <button class="key reg" id="7-key" onclick="append(7);">7</button> <button class="key reg" id="8-key" onclick="append(8);">8</button> <button class="key reg" id="9-key" onclick="append(9);">9</button> <button class="key reg" id="divide-key" onclick="append('/');">/</button><br>
+      </div>
+
+      <div class="row">
+        <button class="key reg" id="4-key" onclick="append(4);">4</button> <button class="key reg" id="5-key" onclick="append(5);">5</button> <button class="key reg" id="6-key" onclick="append(6);">6</button> <button class="key reg" id="multiply-key"
+          onclick="append('*');">*</button><br>
+      </div>
+
+      <div class="row">
+        <button class="key reg" id="1-key" onclick="append(1);">1</button> <button class="key reg" id="2-key" onclick="append(2);">2</button> <button class="key reg" id="3-key" onclick="append(3);">3</button> <button class="key reg" id="subtract-key"
+          onclick="append('-');">-</button><br>
+      </div>
+
+      <div class="row">
+        <button class="key reg blank">&nbsp;</button> <button class="key reg" id="0-key" onclick="append(0);">0</button> <button class="key reg" id="dot-key" onclick="append('.');">.</button> <button class="key reg" id="add-key" onclick="append('+');">+</button>
+      </div>
+      <div class="row">
+        <button class="key reg blank">&nbsp;</button> <button class="key reg blank">&nbsp;</button> <button class="key reg blank">&nbsp;</button> <button class="key reg" onclick="calc()">=</button>
+      </div>
+      <div class="row">
+        <a class="key full" href="https://github.com/chexbox/Algebra-Calculator">View source on GitHub</a>
+      </div>
     </div>
 
-    <div class="row">
-      <button class="key small" id="7-key" onclick="append(7);">7</button> <button class="key small" id="8-key" onclick="append(8);">8</button> <button class="key small" id="9-key" onclick="append(9);">9</button> <button class="key small" id="divide-key"
-        onclick="append('/');">/</button><br>
-    </div>
-
-    <div class="row">
-      <button class="key small" id="4-key" onclick="append(4);">4</button> <button class="key small" id="5-key" onclick="append(5);">5</button> <button class="key small" id="6-key" onclick="append(6);">6</button> <button class="key small" id="multiply-key"
-        onclick="append('*');">*</button><br>
-    </div>
-
-    <div class="row">
-      <button class="key small" id="1-key" onclick="append(1);">1</button> <button class="key small" id="2-key" onclick="append(2);">2</button> <button class="key small" id="3-key" onclick="append(3);">3</button> <button class="key small" id="subtract-key"
-        onclick="append('-');">-</button><br>
-    </div>
-
-    <div class="row">
-      <button class="key small" id="0-key" onclick="append(0);">0</button> <button class="key small" id="clear-key" onclick="clr();">clear</button> <button class="key small" id="dot-key" onclick="append('.');">.</button> <button class="key small" id="add-key" onclick="append('+');">+</button>
-    </div>
-    <div id="gh">
-      <a id="ghlink" href="https://github.com/chexbox/Algebra-Calculator">View on scource GitHub</a>
-    </div>
-    <script src="calculate.js"></script>
 
   </body>
 
