@@ -101,7 +101,7 @@
     visibility: hidden;
   }
   .row {
-    width: 100%;
+    width: calc(100% - 4px);
     padding: 2px;
     max-width: 750px;
     left: 0;
