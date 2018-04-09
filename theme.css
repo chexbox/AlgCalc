@@ -1,14 +1,19 @@
 body {
   background-color: #555555;
 }
-
+.card {
+  width: calc( 75% - 2em );
+  padding: 1em;
+  background: white;
+  border-radius: 0.5em;
+}
 .key {
   border: 2px solid #202020;
   border-radius: 5px;
   width: 24%;
   padding: 10px;
   /*May change later.*/
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
   user-select: none;
 }
 .key:hover {
