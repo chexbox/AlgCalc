@@ -30,4 +30,9 @@ function calculate(what) {
   };
 };
 */
-document.getElementById("in").value = "";
+/*document.getElementById("in").value = "";*/
+function calc() {
+	var v = document.getElementById("in");
+  var res = eval(v.value);
+	v.value = res;
+}
