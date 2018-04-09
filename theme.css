@@ -1,74 +1,100 @@
-body {
-  background-color: #555555;
-}
-.card {
-  width: calc( 75% - 2em );
-  padding: 1em;
-  background: white;
-  border-radius: 0.5em;
-}
-.key {
-  border: 2px solid #202020;
-  border-radius: 5px;
-  width: 24%;
-  padding: 10px;
-  /*May change later.*/
-  transition: all 0.1s ease;
-  user-select: none;
-}
-.key:hover {
-  /*May change later.*/
-  filter: brightness(110%);
-}
-.key:active {
-  /*May change later.*/
-  filter: brightness(110%);
-}
-#in {
-  border: 2px solid #202020;
-  border-radius: 5px;
-  padding: 10px;
-  width: calc(100% - (24% + 40px));
+/*Heavily inspired by Google's Material Design. Learn more about it at https://material.io/ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@media screen {
+  body {
+    background-color: #cfd8dc;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  .bar {
+    width: calc(100% - 4em);
+    height: auto;
+    padding: 0.1em 2em;
+    position: sticky;
+    top: -0.5px;
+    margin: 0 0 1em 0;
+    background: #039be5;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    color: white;
+  }
+  .card {
+    width: calc( 75% - 2em);
+    padding: 1em;
+    background: white;
+    border-radius: 0.5em;
+    margin: auto;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+  }
+  .key {
+    background: #039be5;
+    border: 2px solid #039be5;
+    border-radius: 2.5px;
+    width: calc( 25% - 9px);
+    padding: 10px;
+    /*May change later.*/
+    transition: all 0.1s ease;
+    user-select: none;
+    margin: 2.5px;
+    color: white;
+    text-decoration: none;
+  }
+  .key:hover:not(.blank) {
+    /*May change later.*/
+    -webkit-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+  }
+  .key:active:not(.blank) {
+    /*May change later.*/
+    -webkit-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+  }
+  .key.sm {
+    width: calc( 12.5% - 8px);
+  }
+  .key.full {
+    width: calc(100% - 34px);
+    margin: 2.5px;
+    ;
+    display: block;
+  }
+  #in {
+    transition: all 0.1s ease;
+    width: calc(75% - 32px);
+    margin: 2.5px;
+    background: white;
+    border: 2px solid #039be5;
+    border-radius: 2.5px;
+    padding: 10px;
+  }
+  .empty {
+    border: none;
+    visibility: hidden;
+  }
+  .row {
+    width: 100%;
+    padding: 2px;
+    max-width: 750px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .top {
+    padding: 2px;
+    max-width: 750px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
-.empty {
-  border: none;
-  visibility: hidden;
-}
-
-.row {
-  padding: 2px;
-  max-width: 750px;
-
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-.top {
-  padding: 2px;
-  max-width: 750px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-#gh {
-  border: 2px solid #202020;
-  border-radius: 5px;
-  padding: 10px;
-  /*May change later.*/
-  transition: all 0.2s ease;
-  background-color: #e0e0e0;
-  user-select: none;
-}
-#gh:hover {
-  /*May change later.*/
-  filter: brightness(110%);
-}
-#gh:active {
-  /*May change later.*/
-  filter: brightness(110%);
-}
-#ghlink {
-  color: black;
-  text-decoration: none;
 }
