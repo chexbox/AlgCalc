@@ -32,3 +32,9 @@ function sqrt() {
   res = Math.sqrt(eval(v.value));
   v.value = res;
 };
+
+function abs() {
+  var v = document.getElementById("in")
+  res = Math.abs(eval(v.value));
+  v.value = res;
+};
