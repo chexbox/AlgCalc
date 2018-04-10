@@ -15,7 +15,7 @@
     height: auto;
     padding: 0;
     margin: 0 0 1em 0;
-    background: #039be5;
+    background: #99e502;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
     box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
@@ -54,7 +54,7 @@
     box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
   }
   .key {
-    background: #039be5;
+    background: #99e502;
     border: 2px solid #039be5;
     border-radius: 2.5px;
     width: calc( 25% - 9px);
