@@ -60,6 +60,7 @@ function tang() {
 };
 function logr() {
   var v = document.getElementById("in");
-  res = log(eval(v.value));
+  v.value = eval(v.value)
+  res = log(v.value);
   v.value = res;
 };
