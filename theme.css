@@ -43,62 +43,27 @@
     color: #039be5;
     background: white;
   }
-  .card {
-    width: calc( 75% - 2em);
+  main {
+    width: calc(100% - 2em);
     padding: 1em;
+    height: auto;
+    overflow: hidden;
+  }
+  .card {
+    width: calc( 100% - 5em);
+    padding: 1em 2em;
     background: white;
     border-radius: 0.5em;
-    margin: 0.5em auto;
+    margin: 0.5em;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
     box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    overflow: hidden;
   }
-  .key {
-    background: #039be5;
-    border: none;
-    border-radius: 2.5px;
-    width: calc( 25% - 5.5px);
-    padding: calc(1em + 2px) 2px;
-    /*May change later.*/
-    transition: all 0.1s ease;
-    user-select: none;
-    margin: 2.5px;
-    color: white;
-    text-decoration: none;
-  }
-  .key:hover:not(.disable), #in:hover, #in:focus {
-    /*May change later.*/
-    -webkit-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-  }
-  .key:active:not(.disable) {
-    /*May change later.*/
-    -webkit-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-  }
-  .key.sm {
-    width: calc( 12.5% - 5.25px);
-  }
-  .key.full {
-    width: calc(100% - 6px);
-    margin: 2.5px;
-    
-    display: block;
-  }
-  #in {
-    transition: all 0.1s ease;
-    width: calc(75% - 2em - 10px);
-    margin: 2.5px;
-    background: white;
-    border: 2px solid #039be5;
-    border-radius: 2.5px;
-    padding: 1em;
-  }
-  .empty {
-    border: none;
-    visibility: hidden;
+  .card.half {
+    width: calc(50% - 5em);
+    float: left;
+    margin: 0.5em 0.5em;
   }
   .row {
     width: 100%;
@@ -114,6 +79,48 @@
     right: 0;
     margin: auto;
   }
-}
-
+  #in {
+    transition: all 0.1s ease;
+    width: calc(75% - 2em - 10px);
+    margin: 2.5px;
+    background: white;
+    border: 2px solid #039be5;
+    border-radius: 2.5px;
+    padding: calc(1em + 1px) 1em;
+    float: left;
+  }
+  .key {
+    background: #039be5;
+    border: none;
+    border-radius: 2.5px;
+    width: calc( 25% - 5.5px);
+    padding: calc(1em + 2px) 2px;
+    /*May change later.*/
+    transition: all 0.1s ease;
+    user-select: none;
+    margin: 2.5px;
+    color: white;
+    text-decoration: none;
+    float: left;
+  }
+  .key.sm {
+    width: calc( 12.5% - 5.25px);
+  }
+  .key.full {
+    width: calc(100% - 6px);
+  }
+  .key:hover:not(.disable),
+  #in:hover,
+  #in:focus {
+    /*May change later.*/
+    -webkit-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+  }
+  .key:active:not(.disable) {
+    /*May change later.*/
+    -webkit-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+  }
 }
