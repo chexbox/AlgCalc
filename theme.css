@@ -57,7 +57,7 @@
     background: #039be5;
     border: none;
     border-radius: 2.5px;
-    width: calc( 25% - 6px);
+    width: calc( 25% - 5.5px);
     padding: calc(1em + 2px) 2px;
     /*May change later.*/
     transition: all 0.1s ease;
@@ -79,10 +79,10 @@
     box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
   }
   .key.sm {
-    width: calc( 12.5% - 6px);
+    width: calc( 12.5% - 5.25px);
   }
   .key.full {
-    width: calc(100% - 8px);
+    width: calc(100% - 6px);
     margin: 2.5px;
     
     display: block;
