@@ -45,22 +45,22 @@ function pct() {
 };
 function sine() {
   var v = document.getElementById("in");
-  res = sin(eval(v.value));
+  res = Math.sin(eval(v.value));
   v.value = res;
 };
 function cosi() {
   var v = document.getElementById("in");
-  res = cos(eval(v.value));
+  res = Math.cos(eval(v.value));
   v.value = res;
 };
 function tang() {
   var v = document.getElementById("in");
-  res = tan(eval(v.value));
+  res = Math.tan(eval(v.value));
   v.value = res;
 };
 function logr() {
   var v = document.getElementById("in");
   v.value = eval(v.value)
-  res = log(v.value);
+  res = Math.log(v.value);
   v.value = res;
 };
