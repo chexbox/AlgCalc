@@ -38,3 +38,8 @@ function abs() {
   res = Math.abs(eval(v.value));
   v.value = res;
 };
+function pct() {
+  var v = document.getElementById("in")
+  res = eval(v.value) / 100 + %;
+  v.value = res;
+};
