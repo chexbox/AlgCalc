@@ -55,10 +55,10 @@
   }
   .key {
     background: #039be5;
-    border: 2px solid #039be5;
+    border: none;
     border-radius: 2.5px;
     width: calc( 25% - 6px);
-    padding: 1em 0;
+    padding: calc(1em + 2px) 2px;
     /*May change later.*/
     transition: all 0.1s ease;
     user-select: none;
