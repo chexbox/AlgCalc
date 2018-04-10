@@ -23,13 +23,12 @@ function del() {
 
 function sqr() {
   var v = document.getElementById("in")
-  res = v.value * v.valu;e
+  res = eval(v.value) * eval(v.value);
   v.value = res;
 };
 
-
 function sqrt() {
   var v = document.getElementById("in")
-  res = Math.sqrt(v.value);
+  res = Math.sqrt(eval(v.value));
   v.value = res;
 };
