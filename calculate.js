@@ -21,6 +21,11 @@ function del() {
   v.value = res;
 }
 
+function sqrt() {
+  var v = document.getElementById("in")
+  res = v.value * v.value
+  v.value = res;
+}
 /* //Calculations
 function calculate(what) {
   var cnst[];
