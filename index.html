@@ -16,47 +16,53 @@
         <a href="https://github.com/chexbox/Algebra-Calculator">GitHub Project</a>
       </nav>
     </div>
-    <div class="card">
-      <div class="top">
-        <!-- Maybe get a different class... -->
-        <input type="text" id="in"><button class="key sm" id="delete-key" onclick="del();">Delete</button><button class="key sm" id="clear-key" onclick="clr();">clear</button>
-      </div>
-      <div class="row">
-        <button class="key sm" onclick="append('(')">(</button><button class="key sm" onclick="append(')')">)</button><button class="key sm disable" >√</button><button class="key sm disable">&nbsp;</button><button class="key sm disable">&nbsp;</button><button class="key sm disable">&nbsp;</button><button class="key sm" onclick="append('=')">=</button><button class="key sm disable" >^</button>
-      </div>
-      <div class="row">
-        <button class="key reg" id="7-key" onclick="append(7);">7</button><button class="key reg" id="8-key" onclick="append(8);">8</button><button class="key reg" id="9-key" onclick="append(9);">9</button><button class="key reg" id="divide-key" onclick="append('/');">/</button><br>
-      </div>
+    <main>
+      <div class="card">
+        <div class="top">
+          <!-- Maybe get a different class... -->
+          <input type="text" id="in"><button class="key sm" id="delete-key" onclick="del();">Delete</button><button class="key sm" id="clear-key" onclick="clr();">clear</button>
+        </div>
+        <div class="row">
+          <button class="key sm" onclick="append('(')">(</button><button class="key sm" onclick="append(')')">)</button><button class="key sm disable">√</button><button class="key sm disable">&nbsp;</button><button class="key sm disable">&nbsp;</button>
+          <button class="key sm disable">&nbsp;</button><button class="key sm" onclick="append('=')">=</button><button class="key sm disable">^</button>
+        </div>
+        <div class="row">
+          <button class="key reg" id="7-key" onclick="append(7);">7</button><button class="key reg" id="8-key" onclick="append(8);">8</button><button class="key reg" id="9-key" onclick="append(9);">9</button><button class="key reg" id="divide-key" onclick="append('/');">/</button><br>
+        </div>
 
-      <div class="row">
-        <button class="key reg" id="4-key" onclick="append(4);">4</button><button class="key reg" id="5-key" onclick="append(5);">5</button><button class="key reg" id="6-key" onclick="append(6);">6</button><button class="key reg" id="multiply-key" onclick="append('*');">*</button><br>
-      </div>
+        <div class="row">
+          <button class="key reg" id="4-key" onclick="append(4);">4</button><button class="key reg" id="5-key" onclick="append(5);">5</button><button class="key reg" id="6-key" onclick="append(6);">6</button><button class="key reg" id="multiply-key" onclick="append('*');">*</button><br>
+        </div>
 
-      <div class="row">
-        <button class="key reg" id="1-key" onclick="append(1);">1</button><button class="key reg" id="2-key" onclick="append(2);">2</button><button class="key reg" id="3-key" onclick="append(3);">3</button><button class="key reg" id="subtract-key" onclick="append('-');">-</button><br>
-      </div>
+        <div class="row">
+          <button class="key reg" id="1-key" onclick="append(1);">1</button><button class="key reg" id="2-key" onclick="append(2);">2</button><button class="key reg" id="3-key" onclick="append(3);">3</button><button class="key reg" id="subtract-key" onclick="append('-');">-</button><br>
+        </div>
 
-      <div class="row">
-        <button class="key reg disable">&nbsp;</button><button class="key reg" id="0-key" onclick="append(0);">0</button><button class="key reg" id="dot-key" onclick="append('.');">.</button><button class="key reg" id="add-key" onclick="append('+');">+</button>
-      </div>
-      
-      <div class="row">
-        <button class="key full" onclick="calc()">Calculate</button>
-      </div>
-       
-      
-    </div>
-<div class="card">
-  <h1>
-    Algebra-Calculator</h1>
-<p>
-This is going to be a free open-scouce javascript calculator, capable of solving step by steb algebra.
-<br>
+        <div class="row">
+          <button class="key reg disable">&nbsp;</button><button class="key reg" id="0-key" onclick="append(0);">0</button><button class="key reg" id="dot-key" onclick="append('.');">.</button><button class="key reg" id="add-key" onclick="append('+');">+</button>
+        </div>
 
-We hope to build this calculator for people to use for fun, homework, and buisness applications. We will use javascript to calculate the math and ouput it step by step. If we find someone who knows how to canvas, we will use it to add graphing.
-  </p>
-    </div>
+        <div class="row">
+          <button class="key full" onclick="calc()">Calculate</button>
+        </div>
 
+
+      </div>
+      <div class="card half">
+        <h1>Algebra Calculator</h1>
+        <p>This is a free open-scouce javascript calculator, capable of solving step-by-step algebra.
+          <br> We hope to build this calculator for people to use for fun, homework, and business applications. We will use javascript to calculate the math and give output step-by-step. If we find someone who knows how to canvas, we will use it to add
+          graphing functionality.
+        </p>
+      </div>
+      <div class="card half">
+        <h1>The Developers</h1>
+        <ul>
+          <li>chexbox</li>
+          <li>infinitytec</li>
+        </ul>
+      </div>
+    </main>
   </body>
 
 </html>

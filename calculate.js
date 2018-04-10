@@ -2,12 +2,25 @@ function append(char) {
   var v = document.getElementById("in");
   char = String(char);
   v.value = v.value + char;
-};
+}
 
 function clr() {
   var v = document.getElementById("in");
   v.value = "";
-};
+}
+
+function calc() {
+  var v = document.getElementById("in");
+  var res = eval(v.value);
+  v.value = res;
+}
+
+function del() {
+  var v = document.getElementById("in")
+  res = v.value.substring(0, v.value.length - 1);
+  v.value = res;
+}
+
 /* //Calculations
 function calculate(what) {
   var cnst[];
@@ -31,13 +44,3 @@ function calculate(what) {
 };
 */
 /*document.getElementById("in").value = "";*/
-function calc() {
-	var v = document.getElementById("in");
-  var res = eval(v.value);
-	v.value = res;
-}
-function del() {
-  var v = document.getElementById("in")
-  res = v.value.substring(0, v.value.length -1);
-  v.value = res;
-};
