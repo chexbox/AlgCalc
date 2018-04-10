@@ -66,13 +66,13 @@
     color: white;
     text-decoration: none;
   }
-  .key:hover:not(.blank) {
+  .key:hover:not(.blank), #in:hover {
     /*May change later.*/
     -webkit-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
     box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
   }
-  .key:active:not(.blank) {
+  .key:active:not(.blank), #in:active {
     /*May change later.*/
     -webkit-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
