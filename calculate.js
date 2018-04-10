@@ -40,6 +40,6 @@ function abs() {
 };
 function pct() {
   var v = document.getElementById("in");
-  res = ( eval(v.value) / 100 ) + string(%);
+  res = ( eval(v.value) / 100 ) + string('%');
   v.value = res;
 };
