@@ -94,7 +94,7 @@
     background: white;
     border: 2px solid #039be5;
     border-radius: 2.5px;
-    padding: 10px;
+    padding: 1em;
   }
   .empty {
     border: none;
