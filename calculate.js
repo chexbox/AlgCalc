@@ -43,22 +43,22 @@ function pct() {
   res = ( eval(v.value) * 100 );
   v.value = res;
 };
-function sin() {
+function sine() {
   var v = document.getElementById("in");
   res = sin(eval(v.value));
   v.value = res;
 };
-function cos() {
+function cosi() {
   var v = document.getElementById("in");
   res = cos(eval(v.value));
   v.value = res;
 };
-function tan() {
+function tang() {
   var v = document.getElementById("in");
   res = tan(eval(v.value));
   v.value = res;
 };
-function log() {
+function logr() {
   var v = document.getElementById("in");
   res = log(eval(v.value));
   v.value = res;
