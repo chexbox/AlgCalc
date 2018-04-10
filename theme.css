@@ -66,7 +66,7 @@
     color: white;
     text-decoration: none;
   }
-  .key:hover:not(.blank), #in:hover {
+  .key:hover:not(.blank), #in:hover, #in:focus {
     /*May change later.*/
     -webkit-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
