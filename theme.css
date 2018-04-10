@@ -79,10 +79,10 @@
     box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
   }
   .key.sm {
-    width: calc( 12.5% - 9px);
+    width: calc( 12.5% - 8px);
   }
   .key.full {
-    width: calc(100% - 34px);
+    width: calc(100% - 8px);
     margin: 2.5px;
     
     display: block;
