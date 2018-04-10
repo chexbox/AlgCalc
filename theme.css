@@ -71,6 +71,7 @@
     left: 0;
     right: 0;
     margin: auto;
+    clear: both;
   }
   .top {
     padding: 2px;
