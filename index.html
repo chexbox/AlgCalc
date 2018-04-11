@@ -4,15 +4,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="theme.css" />
     <title>Algebra Calculator!</title>
-    <script src="calculate.js"></script>
+    <script src="resources/calculate.js"></script>
+    <script src="resources/features.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/style.css" />
   </head>
 
   <body>
-    <div class="bar">
+    <div class="bar" id="mainbar">
+      <button id="dropbtn" onclick="menutoggle()" title="Menu">&nbsp;&#9776;&nbsp;</button>
       <h1>Algebra Calculator!</h1>
-      <nav>
+      <nav id="drop" class="">
+        <a href="#">Home</a>
         <a href="https://github.com/chexbox/Algebra-Calculator">GitHub Project</a>
       </nav>
     </div>
@@ -24,9 +27,8 @@
         </div>
         <div class="row">
           <button class="key sm" onclick="append('(')">(</button><button class="key sm" onclick="append(')')">)</button><button class="key sm" onclick="sqrt();">√</button><button class="key sm" onclick="append('3.141592653589793')">&pi;</button>
-          <button
-            class="key sm" onclick="abs()">|x|</button>
-            <button class="key sm" onclick="append('&percnt;');" title="remainder">rem</button><button class="key sm" onclick="pct();" title="percent">&percnt;</button><button class="key sm" onclick="sqr();">x^2</button>
+          <button class="key sm" onclick="abs()">|x|</button>
+          <button class="key sm" onclick="append('&percnt;');" title="remainder">rem</button><button class="key sm" onclick="pct();" title="percent">&percnt;</button><button class="key sm" onclick="sqr();">x^2</button>
         </div>
         <div class="row">
           <button class="key reg" id="7-key" onclick="append(7);">7</button><button class="key reg" id="8-key" onclick="append(8);">8</button><button class="key reg" id="9-key" onclick="append(9);">9</button><button class="key reg" id="divide-key" onclick="append('/');">/</button><br>
@@ -52,7 +54,8 @@
       </div>
       <div class="card">
         <div class="row">
-          <button class="key sm" onclick="sine()">sin(x)</button><button class="key sm" onclick="cosi()">cos(x)</button><button class="key sm" onclick="tang()">tan(x)</button><button class="key sm disable" onclick="">x^x</button><button class="key sm" onclick="logr()">log(x)</button><button class="key sm" onclick="append(' Math.random() ')">ran</button>
+          <button class="key sm" onclick="sine()">sin(x)</button><button class="key sm" onclick="cosi()">cos(x)</button><button class="key sm" onclick="tang()">tan(x)</button><button class="key sm disable" onclick="">x^x</button><button class="key sm"
+            onclick="logr()">log(x)</button><button class="key sm" onclick="append(' Math.random() ')">ran</button>
         </div>
       </div>
       <div class="card half">
