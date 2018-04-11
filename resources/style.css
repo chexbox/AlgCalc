@@ -11,15 +11,19 @@
     font-family: 'Roboto', sans-serif;
   }
   .bar {
-    width: calc(100% - 0.5em);
+    width: 100%;
     height: auto;
-    padding: 0.25em;
+    padding: 0;
     margin: 0;
-    background: #039be5;
+    background: #0BAB75;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
     box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
     color: white;
+  }
+  .bar.fixed {
+    position: sticky;
+    top: -0.1px;
   }
   .bar h1 {
     font-size: 1em;
@@ -27,25 +31,57 @@
     margin: 0.5em;
     display: inline-block;
   }
+  .bar button {
+    border: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5em;
+  }
   .bar nav {
-    float: right;
+    display: block;
+    position: absolute;
+    left: -15em;
+    background: #0BAB75;
+    transition: all 0.1s ease;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+  }
+  .bar nav.show {
+    display: block;
+    left: 0;
+    width: 15em;
+    height: calc(100vh - 2.5em - 1px);
   }
   .bar nav a {
+    display: block;
+    padding: 1em 0.5em;
+  }
+  .bar nav a[href='#'] {
+    color: #0BAB75;
+    background: white;
+  }
+  .bar nav a,
+  .bar button {
     font-size: 1em;
-    padding: 0.5em;
     background: transparent;
-    display: inline-block;
     text-decoration: none;
     color: white;
     transition: all 0.1s ease;
+    box-sizing: content-box;
   }
-  .bar nav a:hover {
-    color: #039be5;
+  .bar nav a:hover,
+  .bar button:hover {
+    color: #0BAB75;
     background: white;
+  }
+  .bar nav a:active,
+  .bar button:active {
+    background: rgb(250, 250, 250);
   }
   main {
     width: calc(100% - 2em);
-    padding: 1em;
+    padding: 0.5em 1em;
     height: auto;
     overflow: hidden;
   }
@@ -85,13 +121,13 @@
     width: calc(75% - 2em - 10px);
     margin: 2.5px;
     background: white;
-    border: 2px solid #039be5;
+    border: 2px solid #0BAB75;
     border-radius: 2.5px;
     padding: calc(1em + 1px) 1em;
     float: left;
   }
   .key {
-    background: #039be5;
+    background: #0BAB75;
     border: none;
     border-radius: 2.5px;
     width: calc( 25% - 5.5px);
@@ -125,12 +161,12 @@
     box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
   }
 }
+
 @media screen and (max-width: 40em) {
-  
-   main {
+  main {
     width: calc(100% - 0.5em);
     padding: 0.25em;
-}
+  }
   .card {
     padding: 0.5em 1em;
     width: calc( 100% - 3em);
