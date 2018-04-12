@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Calculator!</title>
+    <script src="../resources/features.js"></script>
+    <script src="../resources/calculate.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/style.css" />
+  </head>
+
+  <body>
+    <div class="bar" id="mainbar">
+      <button id="dropbtn" onclick="menutoggle()" title="Menu">&nbsp;&#9776;&nbsp;</button>
+      <h1>Algebra Calculator!</h1>
+      <nav id="drop" class="">
+        <a href="../">Home</a>
+        <a href="../calculators/simple.html">Simple Calculator</a>
+        <a href="../calculators/scientific.html">Scientific Calculator</a>
+        <a href="#">Algebraic Calculator</a>
+        <a href="graphing.html">Graphing Calculator</a>
+        <a href="../help">Help</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../develop/">Develop</a>
+        <a href="https://github.com/chexbox/Algebra-Calculator">GitHub Project</a>
+      </nav>
+    </div>
+<main>
+<div class="card half right">
+  <p>(step-by-step output)</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<div class="card half">
+        <div class="row">
+          <!-- Maybe get a different class... -->
+          <input type="text" id="in"><button class="key sm" id="delete-key" onclick="del();">Delete</button><button class="key sm" id="clear-key" onclick="clr();">clear</button>
+        </div>
+        <div class="row">
+          <button class="key sm" onclick="append('(')">(</button><button class="key sm" onclick="append(')')">)</button><button class="key sm" onclick="sqrt();">√</button><button class="key sm" onclick="append('3.141592653589793')">&pi;</button>
+          <button class="key sm" onclick="abs()">|x|</button>
+          <button class="key sm" onclick="append('&percnt;');" title="remainder">rem</button><button class="key sm" onclick="pct();" title="percent">&percnt;</button><button class="key sm" onclick="sqr();">x^2</button>
+        </div>
+        <div class="row">
+          <button class="key reg" id="7-key" onclick="append(7);">7</button><button class="key reg" id="8-key" onclick="append(8);">8</button><button class="key reg" id="9-key" onclick="append(9);">9</button><button class="key reg" id="divide-key" onclick="append('/');">/</button><br>
+        </div>
+
+        <div class="row">
+          <button class="key reg" id="4-key" onclick="append(4);">4</button><button class="key reg" id="5-key" onclick="append(5);">5</button><button class="key reg" id="6-key" onclick="append(6);">6</button><button class="key reg" id="multiply-key" onclick="append('*');">*</button><br>
+        </div>
+
+        <div class="row">
+          <button class="key reg" id="1-key" onclick="append(1);">1</button><button class="key reg" id="2-key" onclick="append(2);">2</button><button class="key reg" id="3-key" onclick="append(3);">3</button><button class="key reg" id="subtract-key" onclick="append('-');">-</button><br>
+        </div>
+
+        <div class="row">
+          <button class="key reg disable">&nbsp;</button><button class="key reg" id="0-key" onclick="append(0);">0</button><button class="key reg" id="dot-key" onclick="append('.');">.</button><button class="key reg" id="add-key" onclick="append('+');">+</button>
+        </div>
+
+        <div class="row">
+          <button class="key full" onclick="calc()">Calculate</button>
+        </div>
+
+
+      </div>
+      <div class="card">
+        <div class="row">
+          <button class="key sm" onclick="sine()">sin(x)</button><button class="key sm" onclick="cosi()">cos(x)</button><button class="key sm" onclick="tang()">tan(x)</button><button class="key sm disable" onclick="">x^x</button><button class="key sm" onclick="logr()">log(x)</button><button class="key sm" onclick="append(' Math.random() ')">ran</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button>
+        </div>
+        <div class="row">
+          <button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button>
+        </div>
+        <div class="row">
+          <button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button>
+        </div>
+        <div class="row">
+          <button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button>
+        </div>
+        <div class="row">
+          <button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button>
+        </div>
+        <div class="row">
+          <button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button>
+        </div>
+        <div class="row">
+          <button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button>
+        </div>
+</div>
