@@ -101,6 +101,16 @@
     float: left;
     margin: 0.5em 0.5em;
   }
+  .card.threequarters {
+    width: calc(75% - 5em);
+    float: left;
+    margin: 0.5em 0.5em;
+  }
+  .card.quarter {
+    width: calc(25% - 5em);
+    float: left;
+    margin: 0.5em 0.5em;
+  }
   .card.right {
     float: right;
   }
