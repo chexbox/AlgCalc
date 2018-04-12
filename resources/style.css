@@ -101,7 +101,7 @@
     float: left;
     margin: 0.5em 0.5em;
   }
-  .right {
+  .card.right {
     float: right;
   }
   .row {
