@@ -10,4 +10,4 @@ window.onclick = function(event) {
     document.getElementById("mainbar").classList.remove("fixed");
   }
 }
-/*Inspired by a W3Schools tutorial.*/
+/*Inspired and based on a W3Schools tutorial.*/
