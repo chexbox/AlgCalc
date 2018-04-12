@@ -184,7 +184,7 @@
     padding: 0.5em 1em;
     width: calc( 100% - 3em);
   }
-  .card.half {
+  .card.half, .card.threequarters, .card.quarter {
     width: calc(100% - 3em);
     float: left;
     margin: 0.5em 0.5em;
