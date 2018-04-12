@@ -115,8 +115,7 @@
     float: right;
   }
   .row {
-    width: 100%;
-    max-width: 750px;
+    width: 90%;
     left: 0;
     right: 0;
     margin: auto;
