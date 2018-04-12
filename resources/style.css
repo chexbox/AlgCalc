@@ -115,18 +115,11 @@
     float: right;
   }
   .row {
-    width: 90%;
+    width: 100%;
     left: 0;
     right: 0;
     margin: auto;
     clear: both;
-  }
-  .top {
-    padding: 2px;
-    max-width: 750px;
-    left: 0;
-    right: 0;
-    margin: auto;
   }
   #in {
     transition: all 0.1s ease;
