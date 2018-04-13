@@ -196,10 +196,10 @@
     margin: 0.5em 0.5em;
     clear: both;
   }
-  .bar h1 {
-    font-size: 2em;
-  }
-  .bar nav a, button, #in, #dropbtn {
+  .bar nav a, button, #in, #dropbtn, .bar h1 {
     font-size: 1.5em;
   }
+  #dropbtn, .bar h1 {
+    display: inline;
+    margin: 0;
 }
