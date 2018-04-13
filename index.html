@@ -27,20 +27,14 @@
       </nav>
     </div>
     <main>
-      <div class="card">
+      <div class="card half right">
         <div class="row">
           <!-- Maybe get a different class... -->
           <input type="text" id="in"><button class="key sm" id="delete-key" onclick="del();">Delete</button><button class="key sm" id="clear-key" onclick="clr();">clear</button>
         </div>
         <div class="row">
-          <button class="key sm" onclick="append('(')">(</button><button class="key sm" onclick="append(')')">)</button><button class="key sm" onclick="sqrt();">√</button><button class="key sm" onclick="append('3.141592653589793')">&pi;</button>
-          <button class="key sm" onclick="abs()">|x|</button>
-          <button class="key sm" onclick="append('&percnt;');" title="remainder">rem</button><button class="key sm" onclick="pct();" title="percent">&percnt;</button><button class="key sm" onclick="sqr();">x^2</button>
-        </div>
-        <div class="row">
           <button class="key reg" id="7-key" onclick="append(7);">7</button><button class="key reg" id="8-key" onclick="append(8);">8</button><button class="key reg" id="9-key" onclick="append(9);">9</button><button class="key reg" id="divide-key" onclick="append('/');">/</button><br>
         </div>
-
         <div class="row">
           <button class="key reg" id="4-key" onclick="append(4);">4</button><button class="key reg" id="5-key" onclick="append(5);">5</button><button class="key reg" id="6-key" onclick="append(6);">6</button><button class="key reg" id="multiply-key" onclick="append('*');">*</button><br>
         </div>
@@ -62,9 +56,10 @@
       
       <div class="card half">
         <h1>Algebra Calculator</h1>
-        <p>This is a free open-scouce javascript calculator, capable of solving step-by-step algebra.
+        <p>This is a free open-scouce javascript calculator, that will be capable of solving step-by-step algebra.
           <br> We hope to build this calculator for people to use for fun, homework, and business applications. We will use javascript to calculate the math and give output step-by-step. If we find someone who knows how to canvas, we will use it to add
           graphing functionality.
+          <br>If you would like to help with the development, please check out <a href="https://chexbox.github.io/Algebra-Calculator/develop/">this page</a> and the <a href="https://github.com/chexbox/Algebra-Calculator">GitHub Repository</a>.
         </p>
       </div>
       <div class="card half">
