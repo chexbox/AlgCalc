@@ -125,10 +125,12 @@
     transition: all 0.1s ease;
     width: calc(75% - 2em - 10px);
     margin: 2.5px;
-    background: white;
-    border: 2px solid #0BAB75;
+    background: #0BAB75;
+    color: white;
+    font-weight: bold;
+    border: none;
     border-radius: 2.5px;
-    padding: calc(1em + 1px) 1em;
+    padding: calc(1em + 2px) calc(1em + 2px);
     float: left;
   }
   .key {
@@ -166,6 +168,18 @@
     -moz-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
     box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
     background: #0BAB75;
+  }
+  p a {
+    color: black;
+    text-decoration: underline;
+  }
+  p a:hover {
+    color: #0BAB75;
+    text-decoration: underline;
+  }
+  p a:active {
+    color: #0BBF82;
+    text-decoration: underline;
   }
 }
 
