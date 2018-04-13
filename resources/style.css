@@ -199,7 +199,7 @@
   .bar h1 {
     font-size: 2em;
   }
-  .bar nav a, button {
+  .bar nav a, button, #in, #dropbtn {
     font-size: 1.5em;
   }
 }
