@@ -188,12 +188,18 @@
   }
   .card {
     padding: 0.5em;
-    width: calc( 100% - 1em);
+    width: calc( 100% - 2em);
   }
   .card.half, .card.threequarters, .card.quarter {
-    width: calc(100% - 1em);
+    width: calc(100% - 2em);
     float: left;
     margin: 0.5em 0.5em;
     clear: both;
+  }
+  .bar h1 {
+    font-size: 3em;
+  }
+  .bar nav a, button {
+    font-size: 2em;
   }
 }
