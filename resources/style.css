@@ -175,11 +175,9 @@
   }
   p a:hover {
     color: #0BAB75;
-    text-decoration: underline;
   }
   p a:active {
     color: #0BBF82;
-    text-decoration: underline;
   }
 }
 
@@ -189,11 +187,11 @@
     padding: 0.25em;
   }
   .card {
-    padding: 0.5em 1em;
-    width: calc( 100% - 3em);
+    padding: 0.5em;
+    width: calc( 100% - 1em);
   }
   .card.half, .card.threequarters, .card.quarter {
-    width: calc(100% - 3em);
+    width: calc(100% - 1em);
     float: left;
     margin: 0.5em 0.5em;
     clear: both;
