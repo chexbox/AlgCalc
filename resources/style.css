@@ -43,9 +43,9 @@
     left: -15em;
     background: #0BAB75;
     transition: all 0.1s ease;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+    box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
   }
   .bar nav.show {
     display: block;
@@ -91,9 +91,9 @@
     background: white;
     border-radius: 0.5em;
     margin: 0.5em;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    -webkit-box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
     overflow: hidden;
   }
   .card.half {
