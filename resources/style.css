@@ -197,9 +197,9 @@
     clear: both;
   }
   .bar h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
   .bar nav a, button {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
