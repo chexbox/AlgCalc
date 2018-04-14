@@ -180,9 +180,6 @@
   p a:active {
     color: #0BBF82;
   }
-  card h1 {
-    color: #0BAB75;
-  }
 }
 
 @media screen and (max-width: 40em) {
