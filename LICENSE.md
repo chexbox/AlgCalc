@@ -4,7 +4,7 @@ CHEXBOX OPEN-SCOURCE LICENSE
 Inspired somewhat by the GNU license 3.
 
 There is absolutly no warranty. If it breaks, so be it.  
-Users are liable for physical, emotional, social, and spiritual damage caused by the use software.  
+Users are liable for physical, emotional, social, and spiritual damage caused by the use of this software.  
 
 This License grants you unlimited permission to run the unmodified program and anything output by said program.  
  
