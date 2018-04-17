@@ -85,7 +85,7 @@
     width: calc(100% - 2em);
     padding: 0.5em 1em;
     height: auto;
-    min-height: calc(100vh - 5em);
+    min-height: calc(100vh - 6em);
     overflow: hidden;
   }
   .card {
@@ -187,8 +187,8 @@
     color: #0BBF82;
   }
   footer {
-    position: initial;
-    bottom: 0;
+    position: relative;
+    bottom: -5px;
     width: 100%;
     height: auto;
     padding: 0;
