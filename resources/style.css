@@ -213,6 +213,7 @@
   main {
     width: calc(100% - 0.5em);
     padding: 0.25em;
+    min-height: calc(100vh - 7em);
   }
   .card {
     padding: 0.5em;
