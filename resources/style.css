@@ -47,6 +47,7 @@
     -moz-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
     box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
     overflow-y: auto;
+    z-index: 100;
   }
   .bar nav.show {
     display: block;
@@ -185,7 +186,7 @@
     color: #0BBF82;
   }
   footer {
-    position: absoulute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: auto;
