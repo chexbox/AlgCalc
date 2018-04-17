@@ -87,20 +87,20 @@
     overflow: hidden;
   }
   .card {
-    width: calc( 100% - 5em);
-    padding: 1em 2em;
+    width: calc( 100% - 1.5em);
+    padding: 0.5em;
     background: white;
     border-radius: 0.5em;
-    margin: 0.5em;
+    margin: 0.25em;
     -webkit-box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
     box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
     overflow: hidden;
   }
   .card.half {
-    width: calc(50% - 5em);
+    width: calc(50% - 1.5em);
     float: left;
-    margin: 0.5em 0.5em;
+    margin: 0.25em;
   }
   .card.threequarters {
     width: calc(75% - 5em);
@@ -170,6 +170,10 @@
     box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
     background: #0BAB75;
   }
+  p, .card h1 {
+    padding: 0.5em;
+    margin: 0;
+  }
   p a {
     color: black;
     text-decoration: underline;
@@ -182,7 +186,7 @@
   }
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 50em) {
   main {
     width: calc(100% - 0.5em);
     padding: 0.25em;
