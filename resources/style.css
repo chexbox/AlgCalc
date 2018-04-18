@@ -40,7 +40,7 @@
   .bar nav {
     display: block;
     position: absolute;
-    left: -15em;
+    top: -20em;
     background: #0BAB75;
     transition: all 0.1s ease;
     -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
@@ -51,9 +51,8 @@
   }
   .bar nav.show {
     display: block;
-    left: 0;
+    top: 0;
     width: 15em;
-    height: calc(100vh - 2.5em - 1px);
   }
   .bar nav a {
     display: block;
