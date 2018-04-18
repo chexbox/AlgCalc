@@ -234,6 +234,6 @@
   nav {
     max-height: calc(100vh - 3.6em - 1px);
   }
-  nav.show {
+  .bar nav.show {
     top: calc(3.5em + 1px);
 }
