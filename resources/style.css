@@ -40,7 +40,7 @@
   .bar nav {
     display: block;
     position: absolute;
-    top: -20em;
+    top: -35em;
     background: #0BAB75;
     transition: all 0.1s ease;
     -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
