@@ -48,11 +48,11 @@
     box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
     overflow-y: auto;
     z-index: 100;
+    width: 15em;
   }
   .bar nav.show {
     display: block;
-    top: 2em;
-    width: 15em;
+    top: calc(2.5em - 1px);
   }
   .bar nav a {
     display: block;
@@ -232,6 +232,8 @@
     margin: 0;
   }
   nav {
-    calc(100vh - 3.6em - 1px);
+    max-height: calc(100vh - 3.6em - 1px);
   }
+  nav.show {
+    top: calc(3.5em + 1px);
 }
