@@ -51,7 +51,7 @@
   }
   .bar nav.show {
     display: block;
-    top: .5em;
+    top: 2em;
     width: 15em;
   }
   .bar nav a {
