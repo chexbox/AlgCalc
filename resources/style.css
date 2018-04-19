@@ -1,239 +1,285 @@
 /*Heavily inspired by Google's Material Design. Learn more about it at https://material.io/ */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+:root {
+    --main-bg: #cfd8dc;
+    --accent: #0BAB75;
+    --card: #ffffff;
+    --text: #000000;
+    --accenttext: #ffffff;
+}
+
 @media screen {
-  body {
-    background-color: #cfd8dc;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-  }
-  .bar {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    background: #0BAB75;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    color: white;
-  }
-  .bar.fixed {
-    position: sticky;
-    top: -0.1px;
-  }
-  .bar h1 {
-    font-size: 1em;
-    padding: 0;
-    margin: 0.5em;
-    display: inline-block;
-  }
-  .bar button {
-    border: none;
-    font-weight: bold;
-    display: inline-block;
-    padding: 0.5em;
-  }
-  .bar nav {
-    display: block;
-    position: absolute;
-    top: -35em;
-    background: #0BAB75;
-    transition: all 0.2s ease;
-    -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
-    overflow-y: auto;
-    z-index: 100;
-    width: 15em;
-  }
-  .bar nav.show {
-    display: block;
-    top: calc(2.5em - 1px);
-  }
-  .bar nav a {
-    display: block;
-    padding: 1em 0.5em;
-  }
-  .bar nav a[href='#'] {
-    color: #0BAB75;
-    background: white;
-  }
-  .bar nav a,
-  .bar button {
-    font-size: 1em;
-    background: transparent;
-    text-decoration: none;
-    color: white;
-    transition: all 0.1s ease;
-    box-sizing: content-box;
-  }
-  .bar nav a:hover,
-  .bar button:hover {
-    color: #0BAB75;
-    background: white;
-  }
-  .bar nav a:active,
-  .bar button:active {
-    background: rgba(255, 255, 255, 0.9);
-  }
-  main {
-    width: calc(100% - 2em);
-    padding: 0.5em 1em;
-    height: auto;
-    min-height: calc(100vh - 6em);
-    overflow: hidden;
-  }
-  .card {
-    width: calc( 100% - 1.5em);
-    padding: 0.5em;
-    background: white;
-    border-radius: 0.5em;
-    margin: 0.25em;
-    -webkit-box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
-    overflow: hidden;
-  }
-  .card.half {
-    width: calc(50% - 1.5em);
-    float: left;
-    margin: 0.25em;
-  }
-  .card.threequarters {
-    width: calc(75% - 5em);
-    float: left;
-    margin: 0.5em 0.5em;
-  }
-  .card.quarter {
-    width: calc(25% - 5em);
-    float: left;
-    margin: 0.5em 0.5em;
-  }
-  .card.right {
-    float: right;
-  }
-  .row {
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    clear: both;
-  }
-  #in {
-    transition: all 0.1s ease;
-    width: calc(75% - 2em - 10px);
-    margin: 2.5px;
-    background: #0BAB75;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 2.5px;
-    padding: calc(1em + 2px) calc(1em + 2px);
-    float: left;
-  }
-  .key {
-    background: #0BAB75;
-    border: none;
-    border-radius: 2.5px;
-    width: calc( 25% - 5.5px);
-    padding: calc(1em + 2px) 2px;
-    /*May change later.*/
-    transition: all 0.1s ease;
-    user-select: none;
-    margin: 2.5px;
-    color: white;
-    text-decoration: none;
-    float: left;
-  }
-  .key.sm {
-    width: calc( 12.5% - 5.25px);
-  }
-  .key.full {
-    width: calc(100% - 6px);
-  }
-  .key:hover:not(.disable),
-  #in:hover,
-  #in:focus {
-    /*May change later.*/
-    -webkit-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    background: #0BBF82;
-  }
-  .key:active:not(.disable) {
-    /*May change later.*/
-    -webkit-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
-    background: #0BAB75;
-  }
-  p, .card h1 {
-    padding: 0.5em;
-    margin: 0;
-  }
-  p a {
-    color: black;
-    text-decoration: underline;
-  }
-  p a:hover {
-    color: #0BAB75;
-  }
-  p a:active {
-    color: #0BBF82;
-  }
-  footer {
-    position: relative;
-    bottom: -5px;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    background: #0BAB75;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-    color: white;
-  }
-  footer a {
-    color: white;
-    text-decoration: none;
-  }
-  footer a:hover{
-    color: white;
-    text-decoration: underline;
-  }
+    body {
+         background:#cfd8dc;
+        background: var(--main-bg);
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    .bar {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+       background: #0BAB75;
+        background: var(--accent);
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+        box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+        color: #ffffff;
+        color: var(--accenttext);
+    }
+    .bar.fixed {
+        position: sticky;
+        top: -0.1px;
+    }
+    .bar h1 {
+        font-size: 1em;
+        padding: 0;
+        margin: 0.5em;
+        display: inline-block;
+    }
+    .bar button {
+        border: none;
+        font-weight: bold;
+        display: inline-block;
+        padding: 0.5em;
+    }
+    .bar nav {
+        display: block;
+        position: absolute;
+        top: -35em;
+        background: #0BAB75;
+        background: var(--accent);
+        transition: all 0.1s ease;
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+        box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+        overflow-y: auto;
+        z-index: 100;
+        width: 15em;
+    }
+    .bar nav.show {
+        display: block;
+        top: calc(2.5em - 1px);
+    }
+    .bar nav a {
+        display: block;
+        padding: 1em 0.5em;
+    }
+    .bar nav a[href='#'] {
+        color: #ffffff;
+        color: var(--accent);
+         
+        background: #ffffff;
+        background: var(--accenttext);
+    }
+    .bar nav a,
+    .bar button {
+        font-size: 1em;
+        background: transparent;
+        text-decoration: none;
+        color: #ffffff;
+        color: var(--accenttext);
+        transition: all 0.1s ease;
+        box-sizing: content-box;
+        filter: none;
+    }
+    .bar nav a:hover,
+    .bar button:hover {
+       
+        color: #ffffff;
+        color: var(--accent);
+         background: #0BAB75;
+        background: var(--accenttext);
+    }
+    .bar nav a:active,
+    .bar button:active {
+        background: #ffffff;
+        background: var(--accenttext);
+        filter: opacity(90);
+    }
+    main {
+        width: calc(100% - 2em);
+        padding: 0.5em 1em;
+        height: auto;
+        min-height: calc(100vh - 6em);
+        overflow: hidden;
+        color: #000000;
+        color: var(--text);
+    }
+    .card {
+        width: calc( 100% - 1.5em);
+        padding: 0.5em;
+        background: var(--card);
+        border-radius: 0.5em;
+        margin: 0.25em;
+        -webkit-box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
+        box-shadow: 0px 2.5px 2.5px 0px rgba(50, 50, 50, 0.25);
+        overflow: hidden;
+    }
+    .card.half {
+        width: calc(50% - 1.5em);
+        float: left;
+        margin: 0.25em;
+    }
+    .card.threequarters {
+        width: calc(75% - 5em);
+        float: left;
+        margin: 0.5em 0.5em;
+    }
+    .card.quarter {
+        width: calc(25% - 5em);
+        float: left;
+        margin: 0.5em 0.5em;
+    }
+    .card.right {
+        float: right;
+    }
+    .row {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        clear: both;
+    }
+    #in {
+        transition: all 0.1s ease;
+        width: calc(75% - 2em - 10px);
+        margin: 2.5px;
+        background: #0BAB75;
+        background: var(--accent);
+        color: #ffffff;
+        color: var(--accenttext);
+        font-weight: bold;
+        border: none;
+        border-radius: 2.5px;
+        padding: calc(1em + 2px) calc(1em + 2px);
+        float: left;
+    }
+    .key, p button {
+        background: #0BAB75;
+        background: var(--accent);
+        border: none;
+        border-radius: 2.5px;
+        width: calc( 25% - 5.5px);
+        padding: calc(1em + 2px) 2px;
+        /*May change later.*/
+        transition: all 0.1s ease;
+        user-select: none;
+        margin: 2.5px;
+        color: #ffffff;
+        color: var(--accenttext);
+        text-decoration: none;
+        float: left;
+    }
+    .key.sm {
+        width: calc( 12.5% - 5.25px);
+    }
+    .key.full {
+        width: calc(100% - 6px);
+    }
+    .key:hover:not(.disable),
+    #in:hover,
+    #in:focus, p button:hover {
+        /*May change later.*/
+        -webkit-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+        box-shadow: 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+        background: #0BAB75;
+        background: var(--accent);
+    }
+    .key:active:not(.disable), p button:active {
+        /*May change later.*/
+        -webkit-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+        box-shadow: inset 0px 2.5px 5px 0px rgba(50, 50, 50, 0.25);
+        background: #0BAB75;
+        background: var(--accent);
+    }
+    p,
+    .card h1 {
+        padding: 0.5em;
+        margin: 0;
+    }
+    p a, a:not(nav) {
+        transition: all 0.1s ease;
+        color: #000000;
+        color: var(--text);
+        text-decoration: underline;
+    }
+    p a:hover, a:not(nav):hover {
+        color: #0BAB75;
+        color: var(--accent);
+    }
+    p a:active, a:not(nav):active {
+        color: #0BAB75;
+        color: var(--accent);
+    }
+    footer {
+        position: relative;
+        bottom: -5px;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        background: #0BAB75;
+        background: var(--accent);
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+        box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+        color: #ffffff;
+        color: var(--accenttext);
+    }
+    footer a {
+        color: #ffffff;
+        color: var(--accenttext);
+        text-decoration: none;
+    }
+    footer a:hover {
+        color: #ffffff;
+        color: var(--accenttext);
+        text-decoration: underline;
+    }
 }
 
 @media screen and (max-width: 50em) {
-  main {
-    width: calc(100% - 0.5em);
-    padding: 0.25em;
-    min-height: calc(100vh - 7em);
-  }
-  .card {
-    padding: 0.5em;
-    width: calc( 100% - 2em);
-  }
-  .card.half, .card.threequarters, .card.quarter {
-    width: calc(100% - 2em);
-    float: left;
-    margin: 0.5em 0.5em;
-    clear: both;
-  }
-  .bar nav a, button, #in, #dropbtn, .bar h1 {
-    font-size: 1.5em;
-  }
-  #dropbtn, .bar h1 {
-    display: inline;
-    margin: 0;
-  }
-  nav {
-    max-height: calc(100vh - 3.6em - 1px);
-  }
-  .bar nav.show {
-    top: calc(3.5em + 1px);
-}
+    main {
+        width: calc(100% - 0.5em);
+        padding: 0.25em;
+        min-height: calc(100vh - 7em);
+    }
+    .card {
+        padding: 0.5em;
+        width: calc( 100% - 2em);
+    }
+    .card.half,
+    .card.threequarters,
+    .card.quarter {
+        width: calc(100% - 2em);
+        float: left;
+        margin: 0.5em 0.5em;
+        clear: both;
+    }
+    .bar nav a,
+    button,
+    #in,
+    #dropbtn,
+    .bar h1 {
+        font-size: 1.5em;
+    }
+    #dropbtn,
+    .bar h1 {
+        display: inline;
+        margin: 0;
+    }
+    nav {
+        max-height: calc(100vh - 3.6em - 1px);
+    }
+    .bar nav.show {
+        top: calc(3.5em + 1px);
+    }
