@@ -7,15 +7,16 @@
     <title>Algebra Calculator!</title>
     <script src="../resources/features.js"></script>
     <link rel="stylesheet" type="text/css" href="../resources/style.css" />
+      <script src="../resources/cookies.js"></script>
     <link rel="icon" type="image/ico" href="../static/favicon.ico" />
   </head>
 
-  <body>
+   <body onload="getCookie()">
     <div class="bar" id="mainbar">
       <button id="dropbtn" onclick="menutoggle()" title="Menu">&nbsp;&#9776;&nbsp;</button>
       <h1>Algebra Calculator!</h1>
       <nav id="drop" class="">
-        <a href="../">Home</a>
+        <a href="../index.html">Home</a>
         <a href="../calculators/simple.html">Simple Calculator</a>
         <a href="../calculators/scientific.html">Scientific Calculator</a>
         <a href="../calculators/algebra.html">Algebraic Calculator</a>
