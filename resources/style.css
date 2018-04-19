@@ -42,7 +42,7 @@
     position: absolute;
     top: -35em;
     background: #0BAB75;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
     -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
     box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
