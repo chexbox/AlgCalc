@@ -91,18 +91,23 @@
         overflow-y: auto;
         z-index: 100;
         width: 15em;
+            
     }
     .bar .settings.show {
         display: block;
         top: calc(2.5em - 1px);
     }
-    .bar .settings button {
-        display: none;
+    .bar .settings h1 {
+        width: 14em;
         padding: 1em 0.5em;
+        text-align: center;
+        text-decoration: underline;
     }
-    .bar .settings.show button {
-        display: block;
-    } 
+    .bar .settings button {
+        padding: 1em 0.5em;
+        width: 14em;
+        font-weight: 500;
+    }
     .bar nav a,
     .bar button {
         font-size: 1em;
