@@ -107,6 +107,7 @@
         display: block;
         padding: 1em 0.5em;
         font-weight: 500;
+        width: calc(100% - 1em);
     }
     .bar nav a,
     .bar button {
