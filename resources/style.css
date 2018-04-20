@@ -311,6 +311,6 @@
     nav, #settings {
         max-height: calc(100vh - 3.6em - 1px);
     }
-    .bar nav.show, .settings.show {
+    .bar nav.show, .bar #settings.show {
         top: calc(3.5em + 1px);
     }
