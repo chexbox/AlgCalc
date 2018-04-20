@@ -299,7 +299,7 @@
     .bar nav a,
     button,
     #in,
-    #dropbtn, #settingsbtn,
+    #dropbtn, #settingsbtn, .settings button,
     .bar h1 {
         font-size: 1.5em;
     }
