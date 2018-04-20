@@ -28,6 +28,15 @@
             <a href="https://github.com/chexbox/Algebra-Calculator">GitHub Project</a>
 
         </nav>
+        <button id="settingsbtn" onclick="settingstoggle()" title="Settings" style="float:right;"><img src="/static/settings.png"></button>
+        <div id="settings" style="float:right;" class=""> 
+            <button class="theme" onclick="setcookie('#cfd8dc,#0BAB75,#ffffff,#000000,#ffffff');">Green Light</button>
+            <button class="theme" onclick="setcookie('#0c0c0c,#0bab75,#272727,#ffffff,#ffffff');">Green Dark</button>
+            <button class="theme" onclick="setcookie('#cfd8dc,#0093ce,#ffffff,#000000,#ffffff');">Blue Light</button>
+            <button class="theme" onclick="setcookie('#0c0c0c,#0093ce,#272727,#ffffff,#ffffff');">Blue Dark</button>
+            <button class="theme" onclick="setcookie('#000000,#000000,#000000,#2aff00,#2aff00');">Terminal</button>
+            <button class="theme" onclick="setcookie('#ffffff,#ffffff,#ffffff,#000000,#000000');">Whiteout</button>
+        </div>
     </div>
     <main id="main">
         <div class="card half right">
