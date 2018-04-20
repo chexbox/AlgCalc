@@ -77,10 +77,11 @@
         background: #ffffff;
         background: var(--accenttext);
     }
-        .bar div {
+        .bar.settings {
         display: block;
         position: absolute;
         top: -35em;
+        right: 0em;
         background: #0BAB75;
         background: var(--accent);
         transition: all 0.1s ease;
@@ -91,11 +92,11 @@
         z-index: 100;
         width: 15em;
     }
-    .bar div.show {
+    .bar .settings.show {
         display: block;
         top: calc(2.5em - 1px);
     }
-    .bar div button {
+    .bar .settings button {
         display: block;
         padding: 1em 0.5em;
     }
