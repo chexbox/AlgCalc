@@ -104,8 +104,8 @@
         text-decoration: underline;
     }
     .bar .settings button {
+        display: block;
         padding: 1em 0.5em;
-        width: 14em;
         font-weight: 500;
     }
     .bar nav a,
@@ -308,9 +308,9 @@
         display: inline;
         margin: 0;
     }
-    nav, .settings {
+    nav, #settings {
         max-height: calc(100vh - 3.6em - 1px);
     }
-    .bar nav.show, #settings .show {
+    .bar nav.show, .settings.show {
         top: calc(3.5em + 1px);
     }
