@@ -61,6 +61,8 @@
         overflow-y: auto;
         z-index: 100;
         width: 15em;
+        max-height: calc(100vh - 6em);
+        overflow-x: hidden;
     }
     .bar nav.show {
         display: block;
@@ -91,7 +93,8 @@
         overflow-y: auto;
         z-index: 100;
         width: 15em;
-            
+        max-height: calc(100vh - 6em);
+        overflow-x: hidden;
     }
     .bar .settings.show {
         display: block;
@@ -100,6 +103,7 @@
     .bar .settings h1 {
         width: 14em;
         padding: 1em 0.5em;
+        margin:0;
         text-align: center;
         text-decoration: underline;
     }
