@@ -22,7 +22,7 @@ window.onclick = function (event) {
     'use strict';
     if (!(event.target == document.getElementById("settings")) && !(event.target == document.getElementById("settingsbtn"))) {
 
-        document.getElementById("drop").classList.remove("show");
+        document.getElementById("settings").classList.remove("show");
         document.getElementById("mainbar").classList.remove("fixed");
     }
 }
