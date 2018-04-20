@@ -50,7 +50,7 @@
     }
     .bar nav {
         display: block;
-        position: relative;
+        position: absolute;
         top: -35em;
         background: #0BAB75;
         background: var(--accent);
@@ -77,9 +77,9 @@
         background: #ffffff;
         background: var(--accenttext);
     }
-        .bar.settings {
+        .bar .settings {
         display: block;
-        position: relative;
+        position: absolute;
         top: -35em;
         right: 0em;
         background: #0BAB75;
