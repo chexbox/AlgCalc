@@ -49,7 +49,7 @@
         padding: 0.5em;
     }
     .bar nav {
-        display: block;
+        display: none;
         position: absolute;
         top: -35em;
         background: #0BAB75;
@@ -78,7 +78,7 @@
         background: var(--accenttext);
     }
         .bar .settings {
-        display: block;
+        display: none;
         position: absolute;
         top: -35em;
         right: 0em;
