@@ -97,9 +97,12 @@
         top: calc(2.5em - 1px);
     }
     .bar .settings button {
-        display: block;
+        display: none;
         padding: 1em 0.5em;
     }
+    .bar .settings.show button {
+        display: block;
+    } 
     .bar nav a,
     .bar button {
         font-size: 1em;
