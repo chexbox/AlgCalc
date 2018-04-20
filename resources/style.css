@@ -299,7 +299,7 @@
     .bar nav a,
     button,
     #in,
-    #dropbtn, #settingsbtn, .settings button,
+    #dropbtn, #settingsbtn, #settings button,
     .bar h1 {
         font-size: 1.5em;
     }
@@ -308,9 +308,9 @@
         display: inline;
         margin: 0;
     }
-    nav {
+    nav, .settings {
         max-height: calc(100vh - 3.6em - 1px);
     }
-    .bar nav.show {
+    .bar nav.show, #settings .show {
         top: calc(3.5em + 1px);
     }
