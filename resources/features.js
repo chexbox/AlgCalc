@@ -1,11 +1,13 @@
 
 function menutoggle() {
     'use strict';
+    document.getElementById("settings").classList.remove("show");
     document.getElementById("drop").classList.toggle("show");
     document.getElementById("mainbar").classList.toggle("fixed");
 };
 function settingstoggle() {
     'use strict';
+    document.getElementById("drop").classList.remove("show");
     document.getElementById("settings").classList.toggle("show");
     document.getElementById("mainbar").classList.toggle("fixed");
 };
