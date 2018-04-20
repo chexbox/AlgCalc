@@ -77,6 +77,28 @@
         background: #ffffff;
         background: var(--accenttext);
     }
+        .bar div {
+        display: block;
+        position: absolute;
+        top: -35em;
+        background: #0BAB75;
+        background: var(--accent);
+        transition: all 0.1s ease;
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+        box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
+        overflow-y: auto;
+        z-index: 100;
+        width: 15em;
+    }
+    .bar div.show {
+        display: block;
+        top: calc(2.5em - 1px);
+    }
+    .bar div button {
+        display: block;
+        padding: 1em 0.5em;
+    }
     .bar nav a,
     .bar button {
         font-size: 1em;
