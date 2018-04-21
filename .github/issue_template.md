@@ -1,3 +1,5 @@
+## Browser Name, Version, and OS ('all' for something that doesn't work whatsoever)
+
 ## Expected
 
 ## Actual
