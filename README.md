@@ -13,10 +13,11 @@ We hope to build this calculator for people to use for fun, homework, and buisne
 * It looks prettier (09 April, 2018)
 * Some advanced functions work (10 April, 2018)
 * More pages are available (11 April, 2018)
+* The site is themeable! (19 April, 2018)
 
 # Summary
 * Free open source algebra calculator
 * https://chexbox.github.io/Algebra-Calculator/
 * Mainly uses javascript and HTML
 * Potentialy uses canvas for graphing in the future
-* We have a little done!
+* We have a little more done!
