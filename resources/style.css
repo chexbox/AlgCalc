@@ -54,7 +54,7 @@
         top: -35em;
         background: #0BAB75;
         background: var(--accent);
-        transition: top 0.1s ease;
+        transition: all 0.1s ease;
         -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
         -moz-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
         box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
@@ -68,11 +68,11 @@
         display: block;
         top: calc(2.5em - 1px);
     }
-    .bar nav a {
+    .bar a {
         display: block;
         padding: 1em 0.5em;
     }
-    .bar nav a[href='#'] {
+    .bar a[href='#'] {
         color: #ffffff;
         color: var(--accent);
          
@@ -113,7 +113,7 @@
         font-weight: 500;
         width: calc(100% - 1em);
     }
-    .bar nav a,
+    .bar a,
     .bar button {
         font-size: 1em;
         background: transparent;
@@ -124,7 +124,7 @@
         box-sizing: content-box;
         filter: none;
     }
-    .bar nav a:hover,
+    .bar a:hover,
     .bar button:hover {
        
         color: #ffffff;
@@ -133,7 +133,7 @@
         background: var(--accenttext);
     }
     .bar nav a:active,
-    .bar button:active {
+    .bar div button:active {
         background: #ffffff;
         background: var(--accenttext);
         filter: opacity(90);
