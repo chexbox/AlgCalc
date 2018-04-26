@@ -50,7 +50,6 @@
     }
     .bar nav {
         position: absolute;
-        top: -35em;
         background: #0BAB75;
         background: var(--accent);
         transition: all 0.1s ease;
@@ -75,14 +74,11 @@
     .bar a[href='#'] {
         color: #ffffff;
         color: var(--accent);
-         
         background: #ffffff;
         background: var(--accenttext);
     }
         .bar .settings {
-        display: none;
         position: absolute;
-        top: -35em;
         right: 0em;
         background: #0BAB75;
         background: var(--accent);
@@ -90,15 +86,17 @@
         -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
         -moz-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
         box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.25);
-        overflow-y: auto;
-        z-index: 100;
         width: 15em;
-        max-height: calc(100vh - 6em);
-        overflow-x: hidden;
+        max-height: 0px;
+        overflow: hidden;
+        height: auto;
     }
     .bar .settings.show {
-        display: block;
         top: auto;
+         display: block;
+        top: auto;
+        max-height: calc(100vh - 6em);
+        overflow-y: auto;
     }
     .bar .settings h1 {
         width: 14em;
@@ -106,6 +104,7 @@
         margin:0;
         text-align: center;
         text-decoration: underline;
+        
     }
     .bar .settings button {
         display: block;
