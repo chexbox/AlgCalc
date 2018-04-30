@@ -313,8 +313,10 @@
         margin: 0;
     }
     nav, #settings {
-        max-height: calc(100vh - 3.6em - 1px);
+        height: auto;
+        max-height: 0px;
     }
     .bar nav.show, .bar #settings.show {
-        top: calc(3.5em + 1px);
+        height: auto;
+        max-height: calc(100vh - 3.6em - 1px);
     }
