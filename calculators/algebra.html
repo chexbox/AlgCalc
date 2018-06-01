@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algebra Calculator!</title>
+    <title>AlgCalc Algebra Calculator!</title>
     <script src="../resources/features.js"></script>
     <script src="../resources/calculate.js"></script>
     <link rel="stylesheet" type="text/css" href="../resources/style.css" />
@@ -15,7 +15,7 @@
    <body onload="getCookie()">
     <header class="bar" id="mainbar">
       <button id="dropbtn" onclick="menutoggle()" title="Menu">&nbsp;&#9776;&nbsp;</button>
-      <h1>Algebra Calculator!</h1>
+      <h1>AlgCalc - Algebra Calculator!</h1>
       <nav id="drop" class="">
         <a href="../index.html">Home</a>
         <a href="../calculators/simple.html">Simple Calculator</a>
@@ -25,7 +25,7 @@
         <a href="../help">Help</a>
         <a href="../faq/">FAQ</a>
         <a href="../develop/">Develop</a>
-        <a href="https://github.com/chexbox/Algebra-Calculator">GitHub Project</a>
+        <a href="https://github.com/chexbox/AlgCalc">GitHub Project</a>
       </nav>
         <button id="settingsbtn" onclick="settingstoggle()" title="Settings" style="float:right;">&#9881;</button>
         <div id="settings" style="float:right;" class="settings"> 
@@ -46,11 +46,11 @@
             <button class="theme" onclick="setcookie('#ff0000,#0000ff,#00ff00,#000000,#ff0000');">Don't do this one :P</button>
         </div>
     </header>
-<main>
-<div class="card half right">
-  <p>(step-by-step output)</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
-<div class="card half">
+    <main>
+      <div class="card half right">
+        <p>(step-by-step output)</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+      <div class="card half">
         <div class="row">
           <!-- Maybe get a different class... -->
           <input type="text" id="in"><button class="key sm" id="delete-key" onclick="del();">Delete</button><button class="key sm" id="clear-key" onclick="clr();">clear</button>
@@ -79,8 +79,6 @@
         <div class="row">
           <button class="key full" onclick="calc()">Calculate</button>
         </div>
-
-
       </div>
       <div class="card">
         <div class="row">
@@ -104,4 +102,8 @@
         <div class="row">
           <button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button><button class="key sm disable" onclick="">&nbsp;</button>
         </div>
-</div>
+      </div>
+    </main>
+    <footer>No footer?</footer>
+  </body>
+</html>
