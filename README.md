@@ -1,4 +1,4 @@
-# AlgClc Algebra Calculator
+# AlgCalc Algebra Calculator
 This is going to be a free open-scouce javascript calculator, capable of solving step by steb algebra.
 
 Check out the beta calcuator here: https://chexbox.github.io/AlgCalc/, or go to https://github.com/chexbox/Calc-API/ to help with the advanced calculation JavaScript.
