@@ -6,47 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlgCalc - Algebra Calculator!</title>
     <script src="resources/calculate.js"></script>
-    <script src="resources/features.js"></script>
-    <script src="resources/cookies.js"></script>
-    <link rel="stylesheet" type="text/css" href="resources/style.css" />
+    <script src="https://chexbox.github.io/Hash0ABA75/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://chexbox.github.io/Hash0ABA75/style.css" />
     <link rel="icon" type="image/ico" href="static/favicon.ico" />
 </head>
 
 <body onload="getCookie()">
-    <header class="bar" id="mainbar">
-        <button id="dropbtn" onclick="menutoggle()" title="Menu">&nbsp;&#9776;&nbsp;</button>
-        <h1>Alg-Calc - Algebra Calculator!</h1>
-        <nav id="drop" class="">
-            <a href="#">Home</a>
-            <a href="calculators/simple.html">Simple Calculator</a>
-            <a href="calculators/scientific.html">Scientific Calculator</a>
-            <a href="calculators/algebra.html">Algebraic Calculator</a>
-            <a href="calculators/graphing.html">Graphing Calculator</a>
-            <a href="help/">Help</a>
-            <a href="faq/">FAQ</a>
-            <a href="develop/">Develop</a>
-            <a href="https://github.com/chexbox/AlgCalc">GitHub Project</a>
-
-        </nav>
-        <button id="settingsbtn" onclick="settingstoggle()" title="Settings" style="float:right;">&#9881;</button>
-        <div id="settings" style="float:right;" class="settings"> 
-            <h1 id="settingsh1">Theme</h1>
-            <button class="theme" onclick="setcookie('#cfd8dc,#0BAB75,#ffffff,#000000,#ffffff');">Green Light</button>
-            <button class="theme" onclick="setcookie('#0c0c0c,#0bab75,#272727,#ffffff,#ffffff');">Green Dark</button>
-            <button class="theme" onclick="setcookie('#cfd8dc,#0093ce,#ffffff,#000000,#ffffff');">Blue Light</button>
-            <button class="theme" onclick="setcookie('#0c0c0c,#0093ce,#272727,#ffffff,#ffffff');">Blue Dark</button>
-            <button class="theme" onclick="setcookie('#000000,#000000,#000000,#ffffff,#2aff00');">Terminal</button>
-            <button class="theme" onclick="setcookie('#ffffff,#ffffff,#ffffff,#000000,#000000');">Whiteout</button>
-            <button class="theme" onclick="setcookie('#ffbbbb,#ee5566,#ff9999,#ffffff,#ffffff');">Pink</button>
-            <button class="theme" onclick="setcookie('#ffff88,#ffffff,#ffff33,#000000,#000000');">Legible Yellow</button>
-            <button class="theme" onclick="setcookie('#cfd8dc,#ff9922,#ffffff,#000000,#ffffff');">Orange</button>
-            <button class="theme" onclick="setcookie('#9f449f,#8822ff,#ff99ff,#000000,#ffffff');">Deep Purple</button>
-            <button class="theme" onclick="setcookie('#cfd8dc,#ff3333,#ffffff,#000000,#ffffff');">Red</button>
-            <button class="theme" onclick="setcookie('#ff1111,#ff3333,#ff4949,#ffffff,#ffffff');">Deep Red</button>
-            <button class="theme" onclick="setcookie('#dfdfdf,#6f6f6f,#9f9f9f,#ffffff,#ffffff');">Grayscale</button>
-            <button class="theme" onclick="setcookie('#ff0000,#0000ff,#00ff00,#000000,#ff0000');">Don't do this one :P</button>
-        </div>
-    </header>
     <main id="main">
         <div class="card half right">
             <div class="row">
@@ -91,9 +56,22 @@
         </div>
         
     </main>
-    <footer>
-        <p>AlgCalc Algebra Calculator | <a href="https://github.com/chexbox/Algebra-Calculator">GitHub Repository</a> | &copy; 2018 by the <a href="https://chexbox.github.io/AlgCalc/develop/">developers</a> under the Chexbox License v1. <a href="https://raw.githubusercontent.com/chexbox/license/master/LICENSE.md">Learn more</a>. | This site uses cookies to save your theme selection. No personal data is collected.</p>
-    </footer>
+    <script>
+  var theme = { 
+    "name": "Alg-Calc - Algebra Calculator!", 
+    "nav": [["Home", "#"], 
+            ['Simple Calculator', 'calculators/simple.html'],
+            ['Scientific Calculator', 'calculators/scientific.html'],
+            ['Algebraic Calculator', 'calculators/algebra.html'],
+            ['Graphing Calculator', 'calculators/graphing.html'],
+            ['Help', 'help/'],
+            ['FAQ', 'faq/'],
+            ['Develop', 'develop/'],
+            ['GitHub Project', 'https://github.com/chexbox/AlgCalc']],
+    "footercontent":'AlgCalc Algebra Calculator | <a href="https://github.com/chexbox/Algebra-Calculator">GitHub Repository</a> | &copy; 2018 by the <a href="https://chexbox.github.io/AlgCalc/develop/">developers</a> under the Chexbox License v1. <a href="https://raw.githubusercontent.com/chexbox/license/master/LICENSE.md">Learn more</a>. | This site uses cookies to save your theme selection. No personal data is collected.'
+  };
+  show();
+</script>
 
 </body>
 
