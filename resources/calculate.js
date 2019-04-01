@@ -1,7 +1,12 @@
 function append(char) {
   var v = document.getElementById("in");
   char = String(char);
-  v.value = v.value + char;
+  if (v.tagName=="INPUT"){
+    v.value = v.value + char;
+  }
+  if (v.tagName=="P"){
+    v.innerHTML = v.innerHTML + char;
+  }
 };
 
 function clr() {
